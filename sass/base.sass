@@ -1,0 +1,97 @@
+/*
+    Theme Name: Ute Gabriel Custom Theme
+    Author: Joao
+    Author URI: http://officialjoao.com
+    Description: ...
+    Version: 1.0
+    License: private
+
+@import url('https://fonts.googleapis.com/css?family=Bitter|Source+Sans+Pro')
+@import "normalize.scss"
+@import "bootstrap.scss"
+
+/******** Colors ****/
+
+$red: #a11a17
+    
+$beige: #dfd6c5
+    
+$brown: #5d3f2b
+
+/*************/
+
+*
+  font-size: 18px
+
+ul, ol
+  padding: 0
+  margin: 0
+  list-style: none
+
+a, a:hover, a:focus
+  text-decoration: none
+  
+img
+  width: 100%
+
+.heading
+  font-family: 'Bitter', serif
+  text-transform: uppercase
+  letter-spacing: 3px
+  color: $red
+  font-weight: 400
+
+.heading-bold
+  @extend .heading
+  font-weight: 700
+
+.basic-text
+  font-family: 'Source Sans Pro', sans-serif
+  line-height: 25px
+  color: $brown
+
+.border
+  border-top: 2px dotted $beige
+  border-bottom: 2px dotted $beige
+
+/****** Font Styles ******
+  
+h1
+  font-size: 30px
+  @extend .heading
+  @extend .border
+  width: 80%
+  padding: 25px 0
+  margin: 40px auto 80px
+  
+h2, h3, h4, h5, h6
+  font-size: 24px
+  @extend .heading
+
+p
+  font-size: 18px
+  @extend .basic-text
+  color: $brown
+  
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px)
+  
+  h1
+    font-size: 34px
+    display: inline-block
+    padding: 25px 40px
+    width: initial
+  
+  h2, h3, h4, h5, h6
+    font-size: 28px
+    
+    
+/**********************
+
+@import "navigation.scss"
+@import "home.sass" 
+@import "gallery.sass"
+@import "kontakt.sass"
+@import "angebote.sass"
+@import "cleanup.sass"
+@import "vita.sass"

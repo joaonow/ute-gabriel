@@ -1,0 +1,64 @@
+#kontakt
+  
+  .col-md-6
+    margin-bottom: 60px
+  
+  .form-container
+    padding: 30px
+    background-color: #dfd6c4
+    
+    input, textarea
+      display: block
+      width: 100%
+      padding: 5px 0 25px 5px
+      margin-bottom: 10px
+      border: none
+      @extend .basic-text
+      
+      &:focus
+        border: 1px solid #a11a17
+    .text-area
+      height: 140px 
+    
+    .submit
+      padding: 10px
+      margin: 0
+      transition: all 200ms ease-in
+      &:hover, &:focus
+        cursor: pointer
+        background-color: #c4bcad
+      
+   
+  #social-icons
+    display: flex
+    justify-content: space-evenly
+    margin-top: 40px
+      
+  .facebook, .instagram, .pinterest
+    display: inline-block
+    width: 80px
+    height: 80px
+    background-color: #dfd6c4
+    border-radius: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    
+    span
+      display: inline-block
+      width: 50px
+      height: 50px
+    
+  .facebook span
+    background: url('images/facebook-icon.svg') no-repeat center center
+    
+  .instagram span
+    background: url('images/instagram-icon.svg') no-repeat center center
+    
+  .pinterest span
+    background: url('images/pinterest-icon.svg') no-repeat center center
+    
+  .alert
+    margin-bottom: 40px
+
+        

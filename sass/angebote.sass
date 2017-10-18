@@ -1,0 +1,86 @@
+#angebote
+
+  h1
+    margin-bottom: 60px
+  
+  section
+    margin-bottom: 60px
+  
+  h2
+    border-top: 2px dotted #dfd6c4
+    
+  h3, h4
+  
+  .heading-center
+    display: block
+    margin-bottom: 20px
+    h2
+      display: inline-block
+      margin: 0
+      padding: 10px 20px 0
+    
+  .row
+    margin: 0
+    
+    .col-md-4, .col-md-6
+      padding: 0
+      margin: 15px 0 0
+    
+    .option
+      display: flex
+      justify-content: flex-start
+      flex-direction: column
+      background: $beige
+      padding: 20px
+      height: 100%
+      
+      .border
+        padding: 20px 0
+        margin-top: 20px
+        margin-bottom: 10px
+        
+        h3, h4
+          margin: 0
+        
+      li
+        margin-bottom: 15px
+        
+  #sonderangebote
+    h2
+      padding: 25px 20px
+      border-bottom: 2px dotted $beige
+    .option
+      justify-content: space-between
+          
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+//@media (min-width: 576px)
+  
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px)
+  
+  #angebote
+    .row
+      .col-md-4 
+        padding: 0 15px
+        &:nth-child(1n)
+          padding-left: 0
+        &:nth-child(3n)
+          padding-right: 0
+          
+  #angebote        
+    #sonderangebote
+      margin-bottom: 0
+      .row
+        margin: 20px -15px
+        .col-md-6
+          padding: 0 7px
+          &:nth-child(2)
+            order: -1
+          &:nth-child(3)
+            order: 2
+
+// Large devices (desktops, 992px and up)
+//@media (min-width: 992px)
